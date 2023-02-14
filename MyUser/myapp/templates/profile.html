@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<h1>Profile Page</h1>
+
+    {% for user in users %}
+        {{user.email}} <br><br>
+    {% endfor %}
+{% endblock content %}
+    
